@@ -1,8 +1,7 @@
 /* GitHub Theme */
 .prettyprint {
-  background: #fff;
   font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 2.5rem 3rem;
   -webkit-font-smoothing: antialiased; 
 }
@@ -15,55 +14,42 @@
   .str {
     color: #dd1144;
   }
-
   .kwd {
     color: #333333;
   }
-
   .com {
     color: #999988;
   }
-
   .typ {
     color: #445588;
   }
-
   .lit {
     color: #445588;
   }
-
   .pun {
     color: #333333;
   }
-
   .opn {
     color: #333333;
   }
-
   .clo {
     color: #333333;
   }
-
   .tag {
     color: navy;
   }
-
   .atn {
     color: teal;
   }
-
   .atv {
     color: #dd1144;
   }
-
   .dec {
     color: #333333;
   }
-
   .var {
     color: teal;
   }
-
   .fun {
     color: #990000;
   }
@@ -109,6 +95,9 @@
     color: #006600;
   }
 }
+
+
+
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
   margin-top: 0;
