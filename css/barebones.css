@@ -83,7 +83,8 @@ html {
   Note: prefers-color-scheme selector support is still limited, but
   included for future and an example of defining a different base 'theme'
 */
-@media screen and (prefers-color-scheme: dark) {
+/* @media screen and (prefers-color-scheme: dark) { */
+@media (min-width: 2000px) { /* FIXME: temporily disabled while I fix index.html. */
   :root {
     /* dark theme: light background, dark text, blue accent */
     --theme-hue: 0;         /* black */
