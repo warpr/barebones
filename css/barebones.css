@@ -29,11 +29,11 @@
 /* ENV Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Media breakpoint variables for use in media queries
-* 	Note: this section is currently commented out pending release of 
-* 	final CSS env() spec
-*  Breakpoints based on 
-*	 https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
-* 
+*   Note: this section is currently commented out pending release of
+*   final CSS env() spec
+*  Breakpoints based on
+*  https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+*
 */
 
 
@@ -42,138 +42,128 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
 
-	/* default theme: light background, dark text, blue accent */
-	--theme-hue: 0;					/* white */
-	--accent-hue: 194;			/* blue */
+  /* default theme: light background, dark text, blue accent */
+  --theme-hue: 0;         /* white */
+  --accent-hue: 194;      /* blue */
 
-	--text-color-richer: hsl(var(--theme-hue), 0%, 5%);			/* #0d0d0d		*/
-	--text-color-normal: hsl(var(--theme-hue), 0%, 13%);		/* #222222		text color */
-	--text-color-softer: hsl(var(--theme-hue), 0%, 33%);		/* #555555 */
+  --text-color-richer: hsl(var(--theme-hue), 0%, 5%);     /* #0d0d0d    */
+  --text-color-normal: hsl(var(--theme-hue), 0%, 13%);    /* #222222    text color */
+  --text-color-softer: hsl(var(--theme-hue), 0%, 33%);    /* #555555 */
 
-  --accent-color: hsl(var(--accent-hue), 86%, 57%);				/* #33C3F0 		link; button-primary bg+border; textarea,select:focus border */
-  --accent-color-hover: hsl(var(--accent-hue), 76%, 49%);	/* #1EAEDB 		link hover; button-primary:hover:focus bg+border */
+  --accent-color: hsl(var(--accent-hue), 86%, 57%);       /* #33C3F0    link; button-primary bg+border; textarea,select:focus border */
+  --accent-color-hover: hsl(var(--accent-hue), 76%, 49%); /* #1EAEDB    link hover; button-primary:hover:focus bg+border */
   --accent-color-disabled: hsl(var(--accent-hue), 90%, 80%);
 
-	--button-color: var(--text-color-softer);								/* button color */
-	--button-color-hover: var(--text-color-normal);					/* button:hover:focus color */
+  --button-color: var(--text-color-softer);               /* button color */
+  --button-color-hover: var(--text-color-normal);         /* button:hover:focus color */
 
-	--button-background: transparent;												/* button, input[type="submit" | "reset" | "button"] */
-	--button-background-hover: transparent;									/* button:hover, input[type="submit" | "reset" | "button"]:hover */
+  --button-background: transparent;                       /* button, input[type="submit" | "reset" | "button"] */
+  --button-background-hover: transparent;                 /* button:hover, input[type="submit" | "reset" | "button"]:hover */
 
-  --border-color-richer: hsl(var(--theme-hue), 0%, 57%);	/* #888888		button:hover border */
-  --border-color: hsl(var(--theme-hue), 0%, 73%);					/* #bbbbbb		button border */
-	--border-color-softer: hsl(var(--theme-hue), 0%, 82%);	/* #d1d1d1		textarea,select,code,td,hr border	 */
-	
-	--background-color: white;														/* transparent body background; textarea,select background */
-	--background-color-softer: hsl(var(--theme-hue), 0%, 95%);
-  --code-background: hsl(var(--theme-hue), 0%, 95%);			/* #f1f1f1 		code background*/
+  --border-color-richer: hsl(var(--theme-hue), 0%, 57%);  /* #888888    button:hover border */
+  --border-color: hsl(var(--theme-hue), 0%, 73%);         /* #bbbbbb    button border */
+  --border-color-softer: hsl(var(--theme-hue), 0%, 82%);  /* #d1d1d1    textarea,select,code,td,hr border  */
 
-	--button-primary-color: white;
+  --background-color: white;                              /* transparent body background; textarea,select background */
+  --background-color-softer: hsl(var(--theme-hue), 0%, 95%);
+  --code-background: hsl(var(--theme-hue), 0%, 95%);      /* #f1f1f1    code background*/
+
+  --button-primary-color: white;
 
 
   /* Note: Skeleton was based off a 10px font sizing for REM  */
-	/* 62.5% of typical 16px browser default = 10px */
-	--base-font-size: 62.5%;
-	
-	/* Grid Defaults - default to match orig skeleton settings */
-	--grid-max-width: 960px;
+  /* 62.5% of typical 16px browser default = 10px */
+  --base-font-size: 62.5%;
+
+  /* Grid Defaults - default to match orig skeleton settings */
+  --grid-max-width: 960px;
 }
 
 /*  Dark Theme
-	Note: prefers-color-scheme selector support is still limited, but 
-	included for future and an example of defining a different base 'theme'
+  Note: prefers-color-scheme selector support is still limited, but
+  included for future and an example of defining a different base 'theme'
 */
 @media screen and (prefers-color-scheme: dark) {
-	:root {
-		/* dark theme: light background, dark text, blue accent */
-		--theme-hue: 0;					/* black */
-		--accent-hue: 194;			/* blue */
+  :root {
+    /* dark theme: light background, dark text, blue accent */
+    --theme-hue: 0;         /* black */
+    --accent-hue: 194;      /* blue */
 
-		--text-color-richer: hsl(var(--theme-hue), 0%, 95%);		/* #f2f2f2 */
-		--text-color-normal: hsl(var(--theme-hue), 0%, 80%);		/* #cccccc		text color */
-		--text-color-softer: hsl(var(--theme-hue), 0%, 67%);		/* #ababab */
+    --text-color-richer: hsl(var(--theme-hue), 0%, 95%);    /* #f2f2f2 */
+    --text-color-normal: hsl(var(--theme-hue), 0%, 80%);    /* #cccccc    text color */
+    --text-color-softer: hsl(var(--theme-hue), 0%, 67%);    /* #ababab */
 
-		--accent-color: hsl(var(--accent-hue), 76%, 49%);				/* link; button-primary bg+border; textarea,select:focus border */
-		--accent-color-hover: hsl(var(--accent-hue), 86%, 57%);	/* link hover; button-primary:hover:focus bg+border */
-		--accent-color-disabled: hsl(var(--accent-hue), 90%, 80%);
+    --accent-color: hsl(var(--accent-hue), 76%, 49%);       /* link; button-primary bg+border; textarea,select:focus border */
+    --accent-color-hover: hsl(var(--accent-hue), 86%, 57%); /* link hover; button-primary:hover:focus bg+border */
+    --accent-color-disabled: hsl(var(--accent-hue), 90%, 80%);
 
-		--button-color: var(--text-color-softer);								/* button color */
-		--button-color-hover: var(--text-color-normal);					/* button:hover:focus color */
+    --button-color: var(--text-color-softer);               /* button color */
+    --button-color-hover: var(--text-color-normal);         /* button:hover:focus color */
 
-		--button-background: transparent;												/* button, input[type="submit" | "reset" | "button"] */
-		--button-background-hover: transparent;									/* button:hover, input[type="submit" | "reset" | "button"]:hover */
+    --button-background: transparent;                       /* button, input[type="submit" | "reset" | "button"] */
+    --button-background-hover: transparent;                 /* button:hover, input[type="submit" | "reset" | "button"]:hover */
 
-		--border-color-richer: hsl(var(--theme-hue), 0%, 67%);	/* #ababab		button:hover border */
-		--border-color: hsl(var(--theme-hue), 0%, 27%);					/* button border */
-		--border-color-softer: hsl(var(--theme-hue), 0%, 20%);	/* textarea,select,code,td,hr border	 */
-	
-		--background-color: hsl(var(--theme-hue), 0%, 12%);			/* body background; textarea,select background */
-		--background-color-softer: hsl(var(--theme-hue), 0%, 18%);
-		--code-background: hsl(var(--theme-hue), 0%, 5%);				/* code background*/
+    --border-color-richer: hsl(var(--theme-hue), 0%, 67%);  /* #ababab    button:hover border */
+    --border-color: hsl(var(--theme-hue), 0%, 27%);         /* button border */
+    --border-color-softer: hsl(var(--theme-hue), 0%, 20%);  /* textarea,select,code,td,hr border   */
 
-		--button-primary-color: white;
+    --background-color: hsl(var(--theme-hue), 0%, 12%);     /* body background; textarea,select background */
+    --background-color-softer: hsl(var(--theme-hue), 0%, 18%);
+    --code-background: hsl(var(--theme-hue), 0%, 5%);       /* code background*/
+
+    --button-primary-color: white;
   }
-	
-	img.value-img {
-		filter: invert(0.8);
-	}
-	/* TODO - test dialing back image intensity on dark background
-  img {
-    opacity: .80;
-    transition: opacity .5s ease-in-out;
+
+  img.value-img {
+    filter: invert(0.8);
   }
-  img:hover {
-    opacity: 1;
-  }
-  */
 }
 
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* CSS Grid depends much more on CSS than HTML, so there is less boilerplate
-	 than with skeleton. Only basic 1-4 column grids are included.
-	 Any additional needs should be made using custom CSS directives */
+   than with skeleton. Only basic 1-4 column grids are included.
+   Any additional needs should be made using custom CSS directives */
 
 
 .grid-container {
-	position: relative;
-	max-width: var(--grid-max-width);
-	margin: 0 auto;
-	padding: 20px;
-	text-align: center;
-	display: grid;
-	grid-gap: 20px;
-	gap: 20px;
-	
-	/* by default use min 200px wide columns auto-fit into width */
-	grid-template-columns: minmax(200px, 1fr);
+  position: relative;
+  max-width: var(--grid-max-width);
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-gap: 20px;
+  gap: 20px;
+
+  /* by default use min 200px wide columns auto-fit into width */
+  grid-template-columns: minmax(200px, 1fr);
 }
 
 /* grids to 3 columns above mobile sizes */
 @media (min-width: 600px) {
-	.grid-container {
-		grid-template-columns: repeat(3, 1fr);
-		padding: 10px 0;
-	}
-	
-	/* basic grids */
-	.grid-container.fifths {
-		grid-template-columns: repeat(5, 1fr);
-	}
-	.grid-container.quarters {
-		grid-template-columns: repeat(4, 1fr);
-	}
-	.grid-container.thirds {
-		grid-template-columns: repeat(3, 1fr);
-	}
-	.grid-container.halves {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	.grid-container.full {
-		grid-template-columns: 1fr;
-	}
-	
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 0;
+  }
+
+  /* basic grids */
+  .grid-container.fifths {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .grid-container.quarters {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-container.thirds {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-container.halves {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-container.full {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -189,11 +179,11 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-size: 1.6rem;		/* changed from 15px in orig skeleton */
+  font-size: 1.6rem;    /* changed from 15px in orig skeleton */
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--text-color-normal); 
+  color: var(--text-color-normal);
   background-color: var(--background-color);;
 }
 
@@ -267,8 +257,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-	color: var(--button-color-hover);
-	background-color: var(--button-background-hover);
+  color: var(--button-color-hover);
+  background-color: var(--button-background-hover);
   border-color: var(--border-color-richer);
   outline: 0; }
 .button.button-primary,
@@ -297,19 +287,19 @@ button:disabled,
 input[type="submit"]:disabled,
 input[type="reset"]:disabled,
 input[type="button"]:disabled {
-	color: var(--button-color);
-	background-color: var(--background-color-softer);
-	border-color: var(--background-color-softer);
-	cursor: default; }
+  color: var(--button-color);
+  background-color: var(--background-color-softer);
+  border-color: var(--background-color-softer);
+  cursor: default; }
 .button.button-primary:disabled,
 button.button-primary:disabled,
 input[type="submit"].button-primary:disabled,
 input[type="reset"].button-primary:disabled,
 input[type="button"].button-primary:disabled {
-	color: var(--button-primary-color);
-	background-color: var(--accent-color-disabled);
-	border-color: var(--accent-color-disabled);
-	cursor: default; }
+  color: var(--button-primary-color);
+  background-color: var(--accent-color-disabled);
+  border-color: var(--accent-color-disabled);
+  cursor: default; }
 
 
 /* Forms
@@ -386,9 +376,9 @@ ol, ul {
   padding-left: 0;
   margin-top: 0; }
 ul ul, ul ol, ol ol, ol ul {
-	font-size: 100%;
-	margin: 1rem 0 1rem 3rem;
-	color: var(--text-color-softer);
+  font-size: 100%;
+  margin: 1rem 0 1rem 3rem;
+  color: var(--text-color-softer);
 }
 li {
   margin-bottom: 0.5rem; }
@@ -461,9 +451,9 @@ form {
 .u-pull-left {
   float: left; }
 .u-align-left {
-	text-align: left; }
+  text-align: left; }
 .u-align-right {
-	text-align: right; }
+  text-align: right; }
 
 
 /* Misc
@@ -505,4 +495,3 @@ there.
 
 /* Larger than tablet */
 @media (min-width: 1200px) {}
-
