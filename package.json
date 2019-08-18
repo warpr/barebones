@@ -1,0 +1,8 @@
+{
+    "name": "barebones",
+    "version": "0.0.2",
+    "description": "Barebones is simple, responsive boilerplate based off the popular Skeleton project by Dave Gamache.",
+    "author": "Kuno Woudt <kuno@frob.nl>",
+    "license": "MIT",
+    "repository": "https://github.com/warpr/barebones.git"
+}

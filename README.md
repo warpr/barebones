@@ -1,3 +1,16 @@
+
+# Changelog
+
+This repository is a fork (currently just for personal use) of [the original Barebones
+repository](https://github.com/acahir/Barebones) by [Steve](https://github.com/acahir).
+
+Changes to the original:
+
+### 2019-08-18
+
+- forked and addad package.json, so I can 'npm install' this package from github
+- renamed LICENSE file
+
 # Barebones
 Barebones is simple, responsive boilerplate based off the popular [Skeleton](http://getskeleton.com) project by [Dave Gamache](https://twitter.com/dhg).
 
