@@ -10,6 +10,7 @@ Changes to the original:
 
 - forked and addad package.json, so I can 'npm install' this package from github
 - renamed LICENSE file
+- applied [open PRs from upstream](https://github.com/acahir/Barebones/pulls)
 
 # Barebones
 Barebones is simple, responsive boilerplate based off the popular [Skeleton](http://getskeleton.com) project by [Dave Gamache](https://twitter.com/dhg).
