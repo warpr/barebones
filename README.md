@@ -6,6 +6,11 @@ repository](https://github.com/acahir/Barebones) by [Steve](https://github.com/a
 
 Changes to the original:
 
+### 2019-08-24
+
+- use a simplified copy of the site from gh-pages as a demo/test page showing most elements
+- publish to github package registry
+
 ### 2019-08-18
 
 - forked and addad package.json, so I can 'npm install' this package from github
