@@ -1,3 +1,59 @@
+html {
+  --theme-prettify-pln: #333333;
+  --theme-prettify-str: #dd1144;
+  --theme-prettify-kwd: #333333;
+  --theme-prettify-com: #999988;
+  --theme-prettify-typ: #445588;
+  --theme-prettify-lit: #445588;
+  --theme-prettify-pun: #333333;
+  --theme-prettify-opn: #333333;
+  --theme-prettify-clo: #333333;
+  --theme-prettify-tag: navy;
+  --theme-prettify-atn: teal;
+  --theme-prettify-atv: #dd1144;
+  --theme-prettify-dec: #333333;
+  --theme-prettify-var: teal;
+  --theme-prettify-fun: #990000;
+}
+
+html.theme-force-dark {
+    --theme-prettify-pln: #bbb; /* plaintext - white */
+    --theme-prettify-str: #65B042; /* string  - green */
+    --theme-prettify-kwd: #E28964; /* keyword - dark pink */
+    --theme-prettify-com: #777; /* comment - gray */
+    --theme-prettify-typ: #89bdff; /* type - light blue */
+    --theme-prettify-lit: #3387CC; /* literal - blue */
+    --theme-prettify-pun: #bbb; /* punctuation - white */
+    --theme-prettify-opn: #333333;
+    --theme-prettify-clo: #333333;
+    --theme-prettify-tag: #89bdff; /* html/xml tag    - light blue */
+    --theme-prettify-atn: #bdb76b; /* html/xml attribute name  - khaki */
+    --theme-prettify-atv: #65B042; /* html/xml attribute value - green */
+    --theme-prettify-dec: #3387CC; /* decimal - blue */
+    --theme-prettify-var: teal;
+    --theme-prettify-fun: #990000;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    html:not(.theme-force-light) {
+        --theme-prettify-pln: #bbb; /* plaintext - white */
+        --theme-prettify-str: #65B042; /* string  - green */
+        --theme-prettify-kwd: #E28964; /* keyword - dark pink */
+        --theme-prettify-com: #777; /* comment - gray */
+        --theme-prettify-typ: #89bdff; /* type - light blue */
+        --theme-prettify-lit: #3387CC; /* literal - blue */
+        --theme-prettify-pun: #bbb; /* punctuation - white */
+        --theme-prettify-opn: #333333;
+        --theme-prettify-clo: #333333;
+        --theme-prettify-tag: #89bdff; /* html/xml tag    - light blue */
+        --theme-prettify-atn: #bdb76b; /* html/xml attribute name  - khaki */
+        --theme-prettify-atv: #65B042; /* html/xml attribute value - green */
+        --theme-prettify-dec: #3387CC; /* decimal - blue */
+        --theme-prettify-var: teal;
+        --theme-prettify-fun: #990000;
+    }
+}
+
 /* GitHub Theme */
 .prettyprint {
   font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
@@ -6,97 +62,21 @@
   -webkit-font-smoothing: antialiased; 
 }
 
-.pln {
-  color: #333333;
-}
-
-@media screen {
-  .str {
-    color: #dd1144;
-  }
-  .kwd {
-    color: #333333;
-  }
-  .com {
-    color: #999988;
-  }
-  .typ {
-    color: #445588;
-  }
-  .lit {
-    color: #445588;
-  }
-  .pun {
-    color: #333333;
-  }
-  .opn {
-    color: #333333;
-  }
-  .clo {
-    color: #333333;
-  }
-  .tag {
-    color: navy;
-  }
-  .atn {
-    color: teal;
-  }
-  .atv {
-    color: #dd1144;
-  }
-  .dec {
-    color: #333333;
-  }
-  .var {
-    color: teal;
-  }
-  .fun {
-    color: #990000;
-  }
-}
-@media print, projection {
-  .str {
-    color: #006600;
-  }
-
-  .kwd {
-    color: #006;
-    font-weight: bold;
-  }
-
-  .com {
-    color: #600;
-    font-style: italic;
-  }
-
-  .typ {
-    color: #404;
-    font-weight: bold;
-  }
-
-  .lit {
-    color: #004444;
-  }
-
-  .pun, .opn, .clo {
-    color: #444400;
-  }
-
-  .tag {
-    color: #006;
-    font-weight: bold;
-  }
-
-  .atn {
-    color: #440044;
-  }
-
-  .atv {
-    color: #006600;
-  }
-}
-
-
+pre .pln, code .pln { color: var(--theme-prettify-pln); }
+pre .str, code .str { color: var(--theme-prettify-str); }
+pre .kwd, code .kwd { color: var(--theme-prettify-kwd); }
+pre .com, code .com { color: var(--theme-prettify-com); }
+pre .typ, code .typ { color: var(--theme-prettify-typ); }
+pre .lit, code .lit { color: var(--theme-prettify-lit); }
+pre .pun, code .pun { color: var(--theme-prettify-pun); }
+pre .opn, code .opn { color: var(--theme-prettify-opn); }
+pre .clo, code .clo { color: var(--theme-prettify-clo); }
+pre .tag, code .tag { color: var(--theme-prettify-tag); }
+pre .atn, code .atn { color: var(--theme-prettify-atn); }
+pre .atv, code .atv { color: var(--theme-prettify-atv); }
+pre .dec, code .dec { color: var(--theme-prettify-dec); }
+pre .var, code .var { color: var(--theme-prettify-var); }
+pre .fun, code .fun { color: var(--theme-prettify-fun); }
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {

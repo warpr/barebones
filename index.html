@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
     <head>
         <!-- Basic Page Needs
              –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -28,7 +28,6 @@
         <!-- Scripts
              –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="stylesheet" href="css/github-prettify-theme.css">
-        <link id="prettify-dark" rel="stylesheet" href="css/github-prettify-theme-dark.css" media="(prefers-color-scheme: dark)">
 
         <!-- Favicon
              –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -138,7 +137,20 @@
                 </pre>
                 <!-- ————————————————————————————————————————————————————— -->
 
-			    <p>A dark theme is included in Barebones inside a <code>prefers-color-scheme: dark</code> media selector. This is a new selector not widely supported by browers yet, but demonstrates a second theme.</p>
+			    <p>A dark theme is included in Barebones inside a <code>prefers-color-scheme: dark</code> media selector.</p>
+
+                <p>You can force use of the light or dark theme by adding a class to the <code>&lt;html&gt;</code> element.</p>
+
+                <pre class="code-example">
+                    <code class="code-example-body prettyprint">/* default: honor the user's preference */
+&lt;html lang="en"&gt;
+
+/* force dark theme */
+&lt;html lang="en" class="theme-force-dark"&gt;
+
+/* force light theme */
+&lt;html lang="en" class="theme-force-light"&gt;</code>
+                </pre>
 		    </div>
 
             <!-- Grid -->

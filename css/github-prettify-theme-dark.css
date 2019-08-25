@@ -1,12 +1,3 @@
-/* GitHub Theme */
-.prettyprint {
-  font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
-  font-size: 1.4rem;
-  padding: 2.5rem 3rem;
-  -webkit-font-smoothing: antialiased; 
-}
-
-/* @media (prefers-color-scheme: dark), */
 
 /* Pretty printing styles. Used with prettify.js. */
 /* Vim sunburst theme by David Leibovic */
@@ -55,3 +46,4 @@ pre.prettyprint {
 		pre .atv, code .atv { color: #060; }
 	}
 }
+ 
