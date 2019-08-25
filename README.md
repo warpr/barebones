@@ -10,6 +10,8 @@ Changes to the original:
 
 - use a simplified copy of the site from gh-pages as a demo/test page showing most elements
 - publish to github package registry
+- automatically select dark or light theme based on user preference
+- add .theme-force-dark and .theme-force-light helper classes to force dark or light theme
 
 ### 2019-08-18
 
